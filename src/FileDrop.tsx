@@ -1,4 +1,4 @@
-import { createRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 const FileDrop = ({
   onDrop = (_data: any) => {
@@ -7,7 +7,7 @@ const FileDrop = ({
 }) => {
   const [drag, setDrag] = useState(false)
   const [filename, setFilename] = useState('')
-  const dropRef: any = createRef()
+  const dropRef: any = useRef()
   let dragCounter = 0
 
   const handleDrag = (event: DragEvent) => {
