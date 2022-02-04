@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
+import './FileDrop.css'
 
 const FileDrop = ({
   onDrop = (_data: any) => {
